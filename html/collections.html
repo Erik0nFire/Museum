@@ -18,27 +18,166 @@
       <button onclick="location.href='../index.html'">Home</button>
       <button onclick="location.href='staff.html'">Staff</button>
       <button onclick="location.href='collections.html'">Collections</button>
+      <button onclick="location.href='shop.html'">Shop</button>
     </nav>
   </header>
 
   <main>
     <h2>Explore Our Collections</h2>
+
+    <!-- Sub-navigation buttons -->
     <div class="button-group">
-      <button>Archaeology</button>
-      <button>Anthropology</button>
-      <button>History</button>
+      <button onclick="showSection('archaeology')">Archaeology</button>
+      <button onclick="showSection('anthropology')">Anthropology</button>
+      <button onclick="showSection('history')">Histories</button>
     </div>
 
-    <p class="placeholder">Collection details coming soon!</p>
+    <!-- Archaeology Section -->
+    <section id="archaeology" class="collection-section">
+      <h2>Archaeology</h2>
+
+      <!-- Artifact 1 -->
+      <article class="artifact-card">
+        <img src="../images/collections/Bronze-Age-Trade-Weight.png" alt="Maritime Bronze Weight artifact">
+        <div class="artifact-info">
+          <h3>Maritime Bronze Weight</h3>
+          <p><strong>Material:</strong> Cast bronze alloy (copper and tin)</p>
+          <p><strong>Size/Weight/Shape:</strong> 6 cm diameter; 210 g; circular disk with engraved rim</p>
+          <p><strong>Estimated Age:</strong> ~3200 years old (Late Bronze Age, ca. 1200 BCE)</p>
+          <p><strong>Preservation State:</strong> Slight corrosion, form intact</p>
+          <p><strong>Location Found:</strong> Ugarit port ruins, northern Levant coast (modern Syria)</p>
+          <p><strong>Likely Purpose:</strong> Standardized trade weight for maritime commerce</p>
+          <p><strong>Evidence of Use:</strong> Polishing on edges; faint impressions from scale arms</p>
+          <p><strong>Manufacture Clues:</strong> Mold casting seams visible; decorative linear pattern around edge</p>
+          <p><strong>Found With:</strong> Amphorae fragments, bronze ingots, merchant’s seal</p>
+          <p><strong>Burial or Habitat Context:</strong> Storage chamber near collapsed warehouse</p>
+          <p><strong>Symbolism:</strong> Possibly inscribed with the symbol for “balance” — fairness in trade</p>
+          <p><strong>Comparison:</strong> Similar weights found in Mycenaean and Cypriot coastal trade sites</p>
+        </div>
+      </article>
+
+      <!-- Artifact 2 -->
+      <article class="artifact-card">
+        <img src="../images/collections/Neolithic-Clay-Figurine.png" alt="The Hearth Guardian Figurine">
+        <div class="artifact-info">
+          <h3>The Hearth Guardian Figurine</h3>
+          <p><strong>Material:</strong> Fired red clay with mica inclusions</p>
+          <p><strong>Size/Weight/Shape:</strong> 18 cm tall; stylized human with broad shoulders</p>
+          <p><strong>Estimated Age:</strong> ~6500 years old (Middle Neolithic)</p>
+          <p><strong>Preservation State:</strong> Nearly complete; head partially eroded</p>
+          <p><strong>Location Found:</strong> Çatalhöyük settlement, Anatolia</p>
+          <p><strong>Likely Purpose:</strong> Household protective charm or fertility idol</p>
+          <p><strong>Evidence of Use:</strong> Heat discoloration on base; handled surface polish</p>
+          <p><strong>Manufacture Clues:</strong> Hand-molded; smoothed by river stone; incised markings</p>
+          <p><strong>Found With:</strong> Hearth ash, animal bones, spindle whorls</p>
+          <p><strong>Burial or Habitat Context:</strong> Domestic dwelling platform</p>
+          <p><strong>Symbolism:</strong> Represented feminine domestic protection or abundance</p>
+          <p><strong>Comparison:</strong> Parallels figurines from Hacilar and Jericho sites</p>
+        </div>
+      </article>
+
+      <!-- Artifact 3 -->
+      <article class="artifact-card">
+        <img src="../images/collections/Obsidian-Ritual-Blade.png" alt="Night Mirror Obsidian Blade">
+        <div class="artifact-info">
+          <h3>“Night Mirror” Blade</h3>
+          <p><strong>Material:</strong> Obsidian (volcanic glass)</p>
+          <p><strong>Size/Weight/Shape:</strong> 22 cm long; tapered leaf shape; 150 g</p>
+          <p><strong>Estimated Age:</strong> ~900 CE (Postclassic Mesoamerica)</p>
+          <p><strong>Preservation State:</strong> Edge sharp; minimal damage</p>
+          <p><strong>Location Found:</strong> Teotihuacan Temple Complex, central Mexico</p>
+          <p><strong>Likely Purpose:</strong> Ceremonial offering tool or sacrificial blade</p>
+          <p><strong>Evidence of Use:</strong> Microscopic residue of human hemoglobin proteins</p>
+          <p><strong>Manufacture Clues:</strong> Pressure flaking along both edges; central groove</p>
+          <p><strong>Found With:</strong> Stone mask fragments, pigment bowls</p>
+          <p><strong>Burial or Habitat Context:</strong> Ritual cache beneath temple platform</p>
+          <p><strong>Symbolism:</strong> Associated with underworld passage and divine mirrors</p>
+          <p><strong>Comparison:</strong> Mirrors and blades of obsidian appear in Aztec priestly contexts</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Anthropology Section -->
+    <section id="anthropology" class="collection-section" style="display:none;">
+      <h2>Anthropology</h2>
+
+      <!-- Artifact 4 -->
+      <article class="artifact-card">
+        <img src="../images/collections/Ceremonial-Feather-Cape.png" alt="Mantle of the Rain Dancer Feather Cape">
+        <div class="artifact-info">
+          <h3>Mantle of the Rain Dancer</h3>
+          <p><strong>Material:</strong> Parrot and macaw feathers woven into plant fiber netting</p>
+          <p><strong>Size/Weight/Shape:</strong> Shoulder-length cape; ~2 kg; semicircular spread</p>
+          <p><strong>Estimated Age:</strong> ~400 years old</p>
+          <p><strong>Preservation State:</strong> Fragile; feather pigments partially faded</p>
+          <p><strong>Location Found:</strong> Upper Amazon Basin, Peru</p>
+          <p><strong>Likely Purpose:</strong> Ceremonial regalia worn during seasonal rain rituals</p>
+          <p><strong>Evidence of Use:</strong> Sweat residue on collar; fiber stretching at ties</p>
+          <p><strong>Manufacture Clues:</strong> Hand-woven netting; knotting consistent with Shipibo techniques</p>
+          <p><strong>Found With:</strong> Flute fragments, gourd rattles, painted face masks</p>
+          <p><strong>Burial or Habitat Context:</strong> Sacred hut storage niche</p>
+          <p><strong>Symbolism:</strong> Connection between avian flight and summoning storms</p>
+          <p><strong>Comparison:</strong> Comparable to Hawaiian ʻahuʻula feather cloaks</p>
+        </div>
+      </article>
+
+      <!-- Artifact 5 -->
+      <article class="artifact-card">
+        <img src="../images/collections/Ancestral-Carved-Staff.png" alt="Staff of the River Ancestor">
+        <div class="artifact-info">
+          <h3>Staff of the River Ancestor</h3>
+          <p><strong>Material:</strong> Hardwood (ebony) inlaid with bone</p>
+          <p><strong>Size/Weight/Shape:</strong> 1.2 m length; cylindrical; serpent carving motif</p>
+          <p><strong>Estimated Age:</strong> ~600 years old</p>
+          <p><strong>Preservation State:</strong> Excellent; slight cracking along base</p>
+          <p><strong>Location Found:</strong> Niger River region, Mali</p>
+          <p><strong>Likely Purpose:</strong> Symbol of lineage authority and ritual mediation</p>
+          <p><strong>Evidence of Use:</strong> Hand oil sheen on grip area; tip abrasion from ground contact</p>
+          <p><strong>Manufacture Clues:</strong> Carved with metal blade; burned for pigment darkening</p>
+          <p><strong>Found With:</strong> Beaded belt, shell fragments, pottery</p>
+          <p><strong>Burial or Habitat Context:</strong> Interred with elder in ancestral shrine</p>
+          <p><strong>Symbolism:</strong> Represents “the river as lineage” — flow between generations</p>
+          <p><strong>Comparison:</strong> Parallels Yoruba and Dogon ritual staves</p>
+        </div>
+      </article>
+
+      <!-- Artifact 6 -->
+      <article class="artifact-card">
+        <img src="../images/collections/Tattooing-Comb-Set.png" alt="Polynesian Bone Tattoo Combs">
+        <div class="artifact-info">
+          <h3>Polynesian Bone Tattoo Combs</h3>
+          <p><strong>Material:</strong> Whale bone, tortoiseshell, and coconut fiber bindings</p>
+          <p><strong>Size/Weight/Shape:</strong> Set of 4 combs; 3–7 cm each; fine-toothed edges</p>
+          <p><strong>Estimated Age:</strong> ~250 years old</p>
+          <p><strong>Preservation State:</strong> Slight discoloration; teeth intact</p>
+          <p><strong>Location Found:</strong> Samoa, coastal burial site</p>
+          <p><strong>Likely Purpose:</strong> Tattooing tools used in ceremonial rites of passage</p>
+          <p><strong>Evidence of Use:</strong> Pigment residue in teeth grooves; fiber cord staining</p>
+          <p><strong>Manufacture Clues:</strong> Teeth carved by hand; lashed to wooden handle with fiber twine</p>
+          <p><strong>Found With:</strong> Pigment bowls, shell ornaments, basalt adze</p>
+          <p><strong>Burial or Habitat Context:</strong> Burial of tattooing specialist (tufuga ta tatau)</p>
+          <p><strong>Symbolism:</strong> Marking identity, status, and family lineage</p>
+          <p><strong>Comparison:</strong> Similar designs in Maori and Tahitian tattoo combs</p>
+        </div>
+      </article>
+    </section>
+
   </main>
 
-<footer>
+  <footer>
     <div class="footer-content">
       <p>This is a fictitious website created purely for academic purposes. The content on this site was conceived by a human and created by AI. 
         The images were created by AI and curated, edited, reviewed, verified, validated and augmented by a human.</p>
     </div>
   </footer>
 
+  <script>
+    function showSection(section) {
+      const sections = document.querySelectorAll('.collection-section');
+      sections.forEach(s => s.style.display = 'none');
+      document.getElementById(section).style.display = 'block';
+    }
+  </script>
+
 </body>
 </html>
-

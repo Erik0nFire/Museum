@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="author" content="Erik Williams">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Souvenir Shop - Museum of Cultural Memory</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Souvenir Shop</h1>
+    <nav>
+      <button onclick="location.href='../index.html'">Home</button>
+      <button onclick="location.href='staff.html'">Staff</button>
+      <button onclick="location.href='collections.html'">Collections</button>
+      <button onclick="location.href='shop.html'">Shop</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Product Grid -->
+    <section class="shop-grid" aria-label="Shop items">
+
+      <!-- Night Mirror Blade -->
+      <article class="product-card"
+               data-id="item001"
+               data-name="“Night Mirror” Blade"
+               data-price="499.95">
+        <figure class="product-media"
+                title="Reflects ancient artistry and spiritual devotion.">
+          <img src="../images/collections/Obsidian-Ritual-Blade.png"
+               alt="Obsidian ‘Night Mirror’ blade on neutral museum backdrop"
+               class="product-img"
+               tabindex="0"
+               role="button"
+               aria-label="View larger image of ‘Night Mirror’ Blade">
+        </figure>
+        <div class="product-body">
+          <h3 class="product-title">“Night Mirror” Blade</h3>
+          <p class="product-desc">
+            From the <strong>Archaeological Collection</strong>. Hand-crafted from volcanic obsidian discovered in
+            Teotihuacan, Central Mexico, this ceremonial blade reflects both artistry and devotion.
+            Once used in sacred rituals, its glass-black surface was believed to mirror the path to the divine —
+            a striking tribute to ancient craftsmanship and spiritual symbolism.
+          </p>
+          <p class="product-price">$499.95</p>
+          <button class="buy-btn" aria-label="Add Night Mirror Blade to Cart">
+            Add “Night Mirror” Blade to Cart
+          </button>
+        </div>
+      </article>
+
+      <!-- Staff of the River Ancestor -->
+      <article class="product-card"
+               data-id="item002"
+               data-name="Staff of the River Ancestor"
+               data-price="699.95">
+        <figure class="product-media"
+                title="Symbolic of generations united by the river’s flow.">
+          <img src="../images/collections/Ancestral-Carved-Staff.png"
+               alt="Ebony staff carved with serpent motif and bone inlay"
+               class="product-img"
+               tabindex="0"
+               role="button"
+               aria-label="View larger image of Staff of the River Ancestor">
+        </figure>
+        <div class="product-body">
+          <h3 class="product-title">Staff of the River Ancestor</h3>
+          <p class="product-desc">
+            From the <strong>Anthropology Collection</strong>. Inspired by lineage staffs of the
+            Niger River region in Mali, this carved ebony piece with bone inlay symbolizes generations
+            united by the flow of water. Traditionally carried by elders as emblems of heritage and wisdom,
+            it embodies the enduring spirit of ancestral leadership.
+          </p>
+          <p class="product-price">$699.95</p>
+          <button class="buy-btn" aria-label="Add Staff of the River Ancestor to Cart">
+            Add Staff of the River Ancestor to Cart
+          </button>
+        </div>
+      </article>
+
+      <!-- Mantle of the Rain Dancer -->
+      <article class="product-card"
+               data-id="item003"
+               data-name="Mantle of the Rain Dancer"
+               data-price="899.95">
+        <figure class="product-media"
+                title="Evokes the harmony of sky, storm, and spirit.">
+          <img src="../images/collections/Ceremonial-Feather-Cape.png"
+               alt="Semicircular feather cape in reds, blues, and yellows on a display form"
+               class="product-img"
+               tabindex="0"
+               role="button"
+               aria-label="View larger image of Mantle of the Rain Dancer">
+        </figure>
+        <div class="product-body">
+          <h3 class="product-title">Mantle of the Rain Dancer</h3>
+          <p class="product-desc">
+            From the <strong>Anthropology Collection</strong>. Modeled after ceremonial garments of
+            Peru’s Upper Amazon Basin, this vibrant feather cape evokes the harmony of sky and storm.
+            Woven from plant fibers and adorned with parrot and macaw feathers, it recalls the sacred dances that
+            once called down the rains to nourish the earth.
+          </p>
+          <p class="product-price">$899.95</p>
+          <button class="buy-btn" aria-label="Add Mantle of the Rain Dancer to Cart">
+            Add Mantle of the Rain Dancer to Cart
+          </button>
+        </div>
+      </article>
+
+      <!-- Maritime Bronze Weight -->
+      <article class="product-card"
+               data-id="item004"
+               data-name="Maritime Bronze Weight"
+               data-price="299.95">
+        <figure class="product-media"
+                title="A symbol of fairness and balance in ancient trade.">
+          <img src="../images/collections/Bronze-Age-Trade-Weight.png"
+               alt="Circular bronze trade weight with engraved rim"
+               class="product-img"
+               tabindex="0"
+               role="button"
+               aria-label="View larger image of Maritime Bronze Weight">
+        </figure>
+        <div class="product-body">
+          <h3 class="product-title">Maritime Bronze Weight</h3>
+          <p class="product-desc">
+            From the <strong>Archaeological Collection</strong>. Cast in bronze and etched with delicate geometric motifs,
+            this replica honors the Ugaritic traders of the northern Levant who built a world on balance and trust.
+            Once a symbol of fairness in maritime trade, it now serves as a timeless reminder of integrity and craftsmanship.
+          </p>
+          <p class="product-price">$299.95</p>
+          <button class="buy-btn" aria-label="Add Maritime Bronze Weight to Cart">
+            Add Maritime Bronze Weight to Cart
+          </button>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>This is a fictitious website created purely for academic purposes. The content on this site was conceived by a human and created by AI. 
+        The images were created by AI and curated, edited, reviewed, verified, validated and augmented by a human.</p>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="imgModal" class="modal" aria-hidden="true" role="dialog" aria-label="Image preview">
+    <div class="modal-backdrop"></div>
+    <figure class="modal-content" role="document">
+      <button class="modal-close" aria-label="Close image preview">&times;</button>
+      <img id="modalImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="">
+      <figcaption id="modalCaption"></figcaption>
+    </figure>
+  </div>
+
+  <script>
+    const modal = document.getElementById('imgModal');
+    const modalImg = document.getElementById('modalImg');
+    const modalCaption = document.getElementById('modalCaption');
+    const closeBtn = document.querySelector('.modal-close');
+    const backdrop = document.querySelector('.modal-backdrop');
+
+    function openModal(src, alt, caption) {
+      modalImg.src = src;
+      modalImg.alt = alt;
+      modalCaption.textContent = caption || '';
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      modalImg.src = '';
+      modalCaption.textContent = '';
+    }
+
+    closeBtn.addEventListener('click', closeModal);
+    backdrop.addEventListener('click', closeModal);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') closeModal();
+    });
+
+    document.querySelectorAll('.product-img').forEach(img => {
+      img.addEventListener('click', () => openModal(img.src, img.alt, img.closest('.product-card').dataset.name));
+      img.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') openModal(img.src, img.alt, img.closest('.product-card').dataset.name);
+      });
+    });
+
+    // --- Add-to-Cart placeholder ---
+    document.querySelectorAll('.buy-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const itemID = e.target.closest('.product-card').dataset.id;
+        alert(`Added ${itemID} to cart (functionality to come)`);
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -40,7 +40,6 @@ nav button:hover {
   background-color: #d1a572;
 }
 
-/* Main content area */
 main {
   padding: 30px;
   background-color: rgba(255, 255, 255, 0.85);
@@ -50,7 +49,7 @@ main {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Intro block*/
+/* Intro block */
 .intro {
   text-align: center;
   max-width: 800px;
@@ -75,8 +74,6 @@ main {
   margin-bottom: 18px;
 }
 
-
-/* Homepage columns */
 .columns {
   display: flex;
   justify-content: space-around;
@@ -94,7 +91,7 @@ main {
   border: 1px solid #d9c2a5;
 }
 
-/* Staff page */
+/* Staff Page */
 .staff-card {
   display: flex;
   align-items: center;
@@ -169,7 +166,7 @@ main {
   line-height: 1.6;
 }
 
-/* Collections page */
+/* Collections Page */
 .button-group {
   text-align: center;
   margin: 30px 0;
@@ -195,6 +192,223 @@ main {
   text-align: center;
   font-style: italic;
   color: #4b3a2b;
+}
+
+main h2,
+.collection-section h2 {
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Artifact card layout */
+.collection-section {
+  margin-top: 40px;
+  padding-top: 10px;
+}
+
+.collection-section h2 {
+  color: #4b3a2b;
+  font-size: 1.8em;
+  border-bottom: 2px solid #b98c57;
+  margin-bottom: 25px;
+}
+
+.artifact-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  background-color: #fffaf2;
+  border: 1px solid #d9c2a5;
+  border-radius: 10px;
+  margin: 25px 0;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.artifact-card img {
+  width: 280px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #d9c2a5;
+  object-fit: cover;
+  background-color: #fdf8f3;
+}
+
+.artifact-info {
+  flex: 1;
+  color: #3b2f2f;
+  line-height: 1.6;
+}
+
+.artifact-info h3 {
+  margin-top: 0;
+  color: #6e4f36;
+  font-size: 1.4em;
+}
+
+.artifact-info p {
+  margin: 6px 0;
+  font-size: 0.98em;
+}
+
+@media (max-width: 800px) {
+  .artifact-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .artifact-card img {
+    width: 80%;
+    margin-bottom: 15px;
+  }
+}
+
+/* Shop Page */
+
+/* Banner text */
+.shop-note {
+  text-align: center;
+  font-style: italic;
+  color: #3b2f2f;
+  background: rgba(255,255,255,0.7);
+  border: 1px solid #d9c2a5;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 10px 0 20px;
+}
+
+/* Product grid */
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+/* Product card styling */
+.product-card {
+  background: #fffaf2;
+  border: 1px solid #d9c2a5;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.product-media {
+  margin: 12px;
+}
+
+.product-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 1px solid #d9c2a5;
+  border-radius: 6px;
+  background: #fdf8f3;
+  cursor: zoom-in;
+}
+
+.product-body {
+  padding: 0 15px 15px;
+}
+
+.product-title {
+  margin: 6px 0 4px;
+  color: #3b2f2f;
+  font-size: 1.1rem;
+}
+
+.product-desc {
+  margin: 6px 0 10px;
+  line-height: 1.55;
+}
+
+.product-price {
+  font-weight: bold;
+  margin: 8px 0 12px;
+  color: #3b2f2f;
+}
+
+/* Add to Cart button */
+.buy-btn {
+  background-color: #48507a;
+  color: #fff7e6;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: transform .05s ease, background-color .2s ease;
+}
+
+.buy-btn:hover {
+  background-color: #5b679d;
+}
+
+.buy-btn:active {
+  transform: translateY(1px);
+}
+
+/* Modal for images */
+.modal[aria-hidden="true"] {
+  display: none;
+}
+
+.modal[aria-hidden="false"] {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+.modal-content {
+  position: relative;
+  background: #fffaf2;
+  border: 1px solid #d9c2a5;
+  border-radius: 10px;
+  padding: 12px;
+  max-width: min(900px, 92vw);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.35);
+}
+
+.modal-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.modal-content figcaption {
+  margin-top: 8px;
+  color: #3b2f2f;
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  background: #6e4f36;
+  color: #fff7e6;
+  border: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 34px;
+  cursor: pointer;
 }
 
 /* Footer */
