@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags-->
+  <meta charset="UTF-8">
+  <meta name="author" content="Erik Williams">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>My Cart - Museum of Cultural Memory</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <!-- Header navigation buttons -->
+  <header>
+    <h1>Shopping Cart</h1>
+    <nav>
+      <button onclick="location.href='../index.html'">Home</button>
+      <button onclick="location.href='staff.html'">Staff</button>
+      <button onclick="location.href='collections.html'">Collections</button>
+      <button onclick="location.href='shop.html'">Shop</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="controls">
+      <label><input type="checkbox" id="memberToggle"> Member Discount (15%)</label>
+    </div>
+
+    <div id="emptyMsg" class="empty" hidden>Your cart is empty.</div>
+
+    <table id="cartTable" class="cart-table" hidden>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Qty</th>
+          <th>Unit Price</th>
+          <th>Line Total</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody id="cartBody"></tbody>
+    </table>
+
+    <div id="summary" class="cart-summary" hidden></div>
+
+    <div class="actions">
+      <button id="clearBtn">Clear Cart</button>
+      <a href="shop.html" class="shop-link">Keep Shopping</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>This is a fictitious website created purely for academic purposes. The content on this site was conceived by a human and created by AI. 
+        The images were created by AI and curated, edited, reviewed, verified, validated and augmented by a human.</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js" defer></script>
+</body>
+</html>
